@@ -7,26 +7,16 @@ import java.util.Date;
 
 public class Post {
     private int id;
-    private String ownerName;
-    private URL ownerUrl;
     private Date postDate;
     private String text;
     private URL imageUrl;
-    private int likes;
+    private LikesInfo likes;
     private CommentsInfo commentsInfo;
-    private int reposts;
-    private int views;
+    private RepostInfo reposts;
+    private ViewsInfo views;
 
     public int getId() {
         return id;
-    }
-
-    public String getOwnerName() {
-        return ownerName;
-    }
-
-    public URL getOwnerUrl() {
-        return ownerUrl;
     }
 
     public Date getPostDate() {
@@ -41,7 +31,7 @@ public class Post {
         return imageUrl;
     }
 
-    public int getLikes() {
+    public LikesInfo getLikes() {
         return likes;
     }
 
@@ -49,11 +39,11 @@ public class Post {
         return commentsInfo;
     }
 
-    public int getReposts() {
+    public RepostInfo getReposts() {
         return reposts;
     }
 
-    public int getViews() {
+    public ViewsInfo getViews() {
         return views;
     }
 
@@ -61,13 +51,6 @@ public class Post {
         this.id = id;
     }
 
-    public void setOwnerName(String ownerName) {
-        this.ownerName = ownerName;
-    }
-
-    public void setOwnerUrl(URL ownerUrl) {
-        this.ownerUrl = ownerUrl;
-    }
 
     public void setPostDate(Date postDate) {
         this.postDate = postDate;
@@ -81,7 +64,7 @@ public class Post {
         this.imageUrl = imageUrl;
     }
 
-    public void setLikes(int likes) {
+    public void setLikes(LikesInfo likes) {
         this.likes = likes;
     }
 
@@ -89,11 +72,11 @@ public class Post {
         this.commentsInfo = commentsInfo;
     }
 
-    public void setReposts(int reposts) {
+    public void setReposts(RepostInfo reposts) {
         this.reposts = reposts;
     }
 
-    public void setViews(int views) {
+    public void setViews(ViewsInfo views) {
         this.views = views;
     }
 }
